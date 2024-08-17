@@ -1,0 +1,19 @@
+ALPHABET: ["-", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+
+IMG_WIDTH: 300
+IMG_HEIGHT: 240
+BATCH_SIZE:  32
+NUM_WORKERS: 12
+LP_MAXLEN: 13
+NUM_EPOCHS: 1000
+INITIAL_LR: !!float 3e-5
+BACKBONE: 'convnextv2_nano.fcmae_ft_in22k_in1k_384'
+DEVICE: 'cuda'
+
+TRAIN_PATH:
+  - "./data/images/train_cropped"
+
+VAL_PATH:
+  - "./data/images/val_cropped"
+
+SAVE_MODEL_PATH: './ocr_models/multihead/'

@@ -1,0 +1,6 @@
+outs:
+- md5: 2ef8d06e12c411cc7f3acaa8fcadbbf1.dir
+  size: 60416522
+  nfiles: 1
+  hash: md5
+  path: ocr_models
