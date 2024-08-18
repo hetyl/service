@@ -3,7 +3,7 @@ from PIL import Image
 import torch
 from ultralytics import YOLO
 import onnxruntime as ort
-from training.detection_OCR import get_result  # Убедитесь, что этот модуль доступен
+from detect_OCR import get_result  # Убедитесь, что этот модуль доступен
 
 # Загрузка моделей
 yolo_path = 'best.pt'  # Путь к модели YOLO
@@ -29,7 +29,7 @@ if uploaded_file is not None:
 
     # Выполнение инференса
     with st.spinner("Обработка изображения..."):
-        result = get_result(temp_image_path, yolo_model, ocr_session, device)
+        result = get_result(temp_image_path, yolo_model, ocr_session)
 
     # Показ результатов
     st.subheader("Результаты")
