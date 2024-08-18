@@ -1,16 +1,13 @@
 trash_folder/
 data/
 ocr_models/
-best.pt
 runs/
 wandb/
 yolov5/
 yolo*
-*.onnx
 __pycache__/
 /data
 /ocr_models
 training/
-*.onnx
-*.pt*
+
 
