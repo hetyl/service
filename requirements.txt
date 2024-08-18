@@ -10,7 +10,6 @@ onnxruntime_gpu
 opencv_contrib_python
 opencv_python
 libopencv
-py-opencv
 opencv
 opencv_python_headless
 pandas
